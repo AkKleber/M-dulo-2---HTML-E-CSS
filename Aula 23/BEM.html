@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+
+    <style>
+
+        .container {
+            border: 1px solid orange;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+
+        .container__form{
+            background-color: blue;
+            padding: 10px;
+        }
+
+        .container__imput{
+            background-color: yellow;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .container__submit{
+            background-color: aquamarine;
+            border-radius: 5px;
+            color: black;
+        }
+
+        .container__header{
+            font: 12px calibre;
+            color: black;
+        }
+
+        .container__header--color{
+            color: indigo;
+        }
+
+        .container__submit--hover{
+            background-color: darkgreen;
+        }
+
+        .container__submit--active{
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- Bloco -->
+    <div class="container">
+
+        <h1 class="container__headr container__header--color">Meu formulário</h1>
+
+        <!-- Componente -->
+        <form action="" class="containe__form">
+
+            <!-- Componentes -->
+            <input type="text" placeholder="Nome" class="container__imput">
+            <input type="password" placeholder="Senha">
+            <input type="submit" value="Entrar" class="container__submit container__submit--hover container__submit--active">
+        </form>
+
+    </div>
+</body>
+</html>
